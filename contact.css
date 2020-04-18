@@ -1,0 +1,213 @@
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid rgb(255, 255, 255); /* Gray border */
+    border-radius: 0.2rem; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    font-family: 'Julius Sans One', sans-serif;
+  }
+  input[type=text]:hover,
+  select:hover,
+  textarea:hover{
+    box-shadow: 0px 0px 0.4rem 0.1rem #45a049;
+  }
+
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #45a049;
+    color: white;
+    text-shadow:0.12rem 0.12rem 0.1rem rgb(75, 74, 74);
+    font-family: 'Julius Sans One', sans-serif;
+    padding: 0.8rem 1.1rem;
+    width: 26rem;
+    border: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #f87eb1ed;
+    box-shadow: 0px 0px 8px rgb(160, 47, 81);
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #000000;
+    padding: 20px;
+    color: white;
+    position: relative;
+    left:12rem;
+    top: 7rem;
+    width: 26rem;
+    display: inline-block;
+  }
+.container::after{
+    content:' ';
+    border-right: 0.06rem solid rgba(255, 255, 255, 0.76);
+    height: 20rem;
+    position: relative;
+    display: block;
+    top:-23.3rem;
+    left:3.5rem;
+  }
+.contact{
+    padding: 3rem 0 3rem 0;
+    color: white;
+    position: relative;
+    left: 17rem;
+    top: -1rem;
+    width: 23rem;
+    height: 100%;
+    display: inline-block;
+}
+.contact-me{
+    font-size: 6rem;
+    position: relative;
+}
+.contact-me::after{
+    content: '';
+    border-bottom: rgba(255, 255, 255, 0.883) solid 0.06rem;
+    width: 17rem;
+    display: block;
+    position: relative;
+    padding-top:2rem;
+    left: 2rem;
+}
+.sns{
+    padding-top:2rem;
+    text-align: center;
+    position: relative;
+    left:-1rem;
+}
+.sns li{
+    display: inline-block;
+    position: relative;
+    border:white 0.04rem solid;
+    background-color: rgba(219, 219, 219, 0.11);
+    border-radius: 100%;
+    width: 2rem;
+    height: 2rem;
+    display: inline-flex;
+    justify-content: center;  /*없어도동작햇음 아래까지*/
+    align-items: center;
+    margin: 0.5rem;
+}
+.sns li:hover{
+  background-color: rgba(219, 219, 219, 0.418);
+  transition-duration: 0.4s;
+  transition-timing-function: ease-in-out;
+}
+#section_four{
+    display: inline-block;
+}
+.sns span{
+    display:none;
+}
+.sns a{
+    color: white;
+}
+@media (max-width : 600px){
+  .container {
+    border-radius: 5px;
+    background-color: #000000;
+    padding: 20px;
+    color: white;
+    position: relative;
+    left:1rem;
+    top: 3rem;
+    width: 80%;
+    display: inline-block;
+  }
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    position: relative;
+    width: 100%;
+    border: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+  }
+  .container::after{
+    display:none;
+  }
+.contact{
+    padding: 3rem 0 3rem 0;
+    color: white;
+    position: relative;
+    top: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+    height: 10rem;
+
+    display: inline-block;
+}
+.contact-me{
+    font-size: 4rem;
+    position: relative;
+    text-align: center;
+}
+.contact-me::after{
+    content: '';
+    border-bottom: rgba(255, 255, 255, 0.883) solid 0.06rem;
+    width: 50%;
+    position: relative;
+    padding-top:2rem;
+    left:50%;
+    transform: translateX(-50%);
+}
+.sns{
+    text-align: center;
+    position: relative;
+    left:50%;
+    transform: translateX(-50%);
+}
+.sns li{
+    display: inline-block;
+    position: relative;
+    border:white 1px solid;
+    border-radius: 100%;
+    width: 2rem;
+    height: 2rem;
+    display: inline-flex;
+}
+#section_four{
+    display: inline-block;
+}
+.sns span{
+    display:none;
+}
+.sns a{
+    color: white;
+}
+
+@media (max-height : 688px){
+  .container{
+    transform: scale(0.9);
+  }
+  .contact{
+    padding-top:1.4rem;
+  }
+  .contact-me{
+    font-size: 1.5rem;
+  }
+  .contact-me::after{
+    padding-top: 0.4rem;
+    width:30%;
+  }
+  ul.sns{
+    padding-top: 0.3rem;
+  }
+  .sns li{
+    height: 0.5rem;
+    width: 0.5rem;
+    border:none;
+  }
+}

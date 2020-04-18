@@ -1,0 +1,225 @@
+
+/*skill*/
+
+.skill-list{
+    position: relative;
+    display: inline-block;
+    width:50rem;
+    height: 27rem;
+    top: 4rem;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+.html{
+    position: relative;
+    width: 12rem;
+    height: 14rem;
+    text-align: center;
+    display: inline-block;
+    margin:auto 1rem;
+}
+.html:hover{
+    background-color: rgba(255, 255, 255, 0.712);
+    border-radius: 5%;
+    transition:0.4s ease-in-out;
+
+}
+
+.css{
+    position: relative;
+    width: 12rem;
+    height: 14rem;
+    text-align: center;
+    display: inline-block;
+    margin:auto 1rem;
+}
+.css:hover{
+    background-color: rgba(255, 255, 255, 0.712);
+    border-radius: 5%;
+    transition:0.4s ease-in-out;
+}
+.js{
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    width: 12rem;
+    height:14rem;
+    margin:auto 1rem;
+}
+.js:hover{
+    background-color: rgba(255, 255, 255, 0.712);
+    border-radius: 5%;
+    transition:0.4s ease-in-out;
+}
+.html > img{
+    width: 7rem;
+    height: 8rem;
+    position: relative;
+    top:1rem;
+}
+.css > img{
+    width: 7rem;
+    height: 8rem;
+    position: relative;
+    top:1rem;
+}
+.js > img{
+    width: 7rem;
+    height: 8rem;
+    position: relative;
+    top:1rem;
+}
+
+
+.html > h1{
+    font-size: 2rem;
+    line-height: 2rem;
+    display: block;
+    position: relative;
+    letter-spacing: 0.084rem;
+    top:2rem;
+}
+.html-graph{
+    position: relative;
+    border:0.09rem rgba(253, 160, 126, 0.602) solid;
+    width: 4rem;
+    height: 0.4rem;
+    display: inline-block;
+    margin:0 auto 0 auto;
+    padding:0;
+    opacity: 0;
+    top:2rem;
+}
+.html-cover{
+    width: 0%;
+    height: 100%;
+    position: relative;
+    margin:0;
+    opacity: 0;
+    background-color: orangered;
+}
+.html:hover .html-graph{
+    opacity: 1;
+    transition-delay: 0.1s;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+.html:hover .html-cover{
+    opacity: 1;
+    width: 50%;
+    transition-delay: 0.5s;
+    transition-duration: 1.3s;
+    transition-timing-function: ease-in-out;
+}
+
+
+
+.css > h1{
+    font-size: 2rem;
+    line-height: 2rem;
+    display: block;
+    position: relative;
+    letter-spacing: 0.084rem;
+    top:2rem;
+}
+.css-graph{
+    position: relative;
+    border:0.09rem rgba(100, 154, 204, 0.5) solid;
+    width: 4rem;
+    height: 0.4rem;
+    display: inline-block;
+    margin:0 auto 0 auto;
+    padding:0;
+    opacity: 0;
+    top:2rem;
+}
+.css-cover{
+    width: 0%;
+    height: 100%;
+    position: relative;
+    margin:0;
+    opacity: 0;
+    background-color: rgb(2, 105, 202);
+}
+.css:hover .css-graph{
+    opacity: 1;
+    transition-delay: 0.1s;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+.css:hover .css-cover{
+    opacity: 1;
+    width: 30%;
+    transition-delay: 0.5s;
+    transition-duration: 1.3s;
+    transition-timing-function: ease-in-out;
+}
+
+
+
+
+
+
+.js > h1{
+    font-size: 2rem;
+    line-height: 2rem;
+    display: block;
+    position: relative;
+    letter-spacing: 0.084rem;
+    top:2rem;
+}
+.js-graph{
+    position: relative;
+    border:0.09rem rgba(88, 143, 79, 0.657) solid;
+    width: 4rem;
+    height: 0.4rem;
+    display: inline-block;
+    margin:0 auto 0 auto;
+    padding:0;
+    opacity: 0;
+    top:2rem;
+}
+.js-cover{
+    width: 0%;
+    height: 100%;
+    position: relative;
+    margin:0;
+    opacity: 0;
+    background-color: rgb(56, 143, 41);
+}
+.js:hover .js-graph{
+    opacity: 1;
+    transition-delay: 0.1s;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+.js:hover .js-cover{
+    opacity: 1;
+    width: 10%;
+    transition-delay: 0.5s;
+    transition-duration: 1.3s;
+    transition-timing-function: ease-in-out;
+}
+
+@media (max-width : 600px){
+    .html > img,
+    .css > img,
+    .js > img{
+        transform: scale(0.7);
+    }
+    .html > h1,
+    .css > h1,
+    .js > h1{
+        font-size: 1rem;
+    }
+    .html,.css,.js{
+        margin:auto 0rem;
+        width:7rem;
+    }
+    .skill-list{
+        width:30rem;
+        left:rem;
+    }
+}
